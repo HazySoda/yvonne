@@ -1,5 +1,9 @@
 function App() {
-  return <>Hello Yvonne!</>
+  return (
+    <>
+      <h1 className='text-center'>Hello Yvonne!</h1>
+    </>
+  )
 }
 
 export default App

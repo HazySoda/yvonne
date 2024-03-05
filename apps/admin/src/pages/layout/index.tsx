@@ -8,7 +8,7 @@ const Layouts = () => {
     background: 'var(--semi-color-fill-0)',
   }
   return (
-    <Layout className='components-layout-demo'>
+    <Layout className='h-screen'>
       <Sider style={{ width: '120px', background: 'var(--semi-color-fill-2)' }}>
         Sider
       </Sider>
