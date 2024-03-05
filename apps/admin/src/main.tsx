@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import 'reset-css'
 import routerConfig from './config/router.tsx'
-import './index.css'
 
 const router = createBrowserRouter(routerConfig)
 
