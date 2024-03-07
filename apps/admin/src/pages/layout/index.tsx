@@ -1,21 +1,56 @@
-import { Layout } from '@douyinfe/semi-ui'
+import { IconSemiLogo } from '@douyinfe/semi-icons'
+import { IconAccessibility } from '@douyinfe/semi-icons-lab'
+import { Avatar, Layout, Nav } from '@douyinfe/semi-ui'
+import clsx from 'clsx'
 const { Header, Footer, Sider, Content } = Layout
 
 const Layouts = () => {
-  const commonStyle = {
-    height: 64,
-    lineHeight: '64px',
-    background: 'var(--semi-color-fill-0)',
-  }
   return (
     <Layout className='h-screen'>
-      <Sider style={{ width: '120px', background: 'var(--semi-color-fill-2)' }}>
-        Sider
-      </Sider>
+      <Header>
+        <Nav
+          className='nav-bar-common'
+          mode='horizontal'
+          onSelect={console.log}
+          header={{
+            logo: <IconSemiLogo className='nav-bar-logo' />,
+            text: 'Miss Yvonne',
+          }}
+          footer={
+            <>
+              <Avatar
+                size='small'
+                color='violet'
+                className='mx-2'
+              >
+                HS
+              </Avatar>
+              <span>HazySoda</span>
+            </>
+          }
+        />
+      </Header>
       <Layout>
-        <Header style={commonStyle}>Header</Header>
-        <Content style={{ height: 300, lineHeight: '300px' }}>Content</Content>
-        <Footer style={commonStyle}>Footer</Footer>
+        <Sider>
+          <Nav
+            className='h-full'
+            items={[
+              {
+                itemKey: 'weight',
+                text: '体重管理',
+                icon: <IconAccessibility />,
+              },
+            ]}
+            onSelect={console.log}
+            footer={{ collapseButton: true }}
+          />
+        </Sider>
+        <Layout>
+          <Content className='text-center'>Content</Content>
+          <Footer className={clsx('text-gray-500', 'nav-bar-common')}>
+            Miss Yvonne ©2024 Created by HazySoda
+          </Footer>
+        </Layout>
       </Layout>
     </Layout>
   )

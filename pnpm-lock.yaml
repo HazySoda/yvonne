@@ -38,9 +38,18 @@ importers:
 
   apps/admin:
     dependencies:
+      '@douyinfe/semi-icons':
+        specifier: ^2.54.0
+        version: 2.54.0(react@18.2.0)
+      '@douyinfe/semi-icons-lab':
+        specifier: ^2.54.0
+        version: 2.54.0(react-dom@18.2.0)(react@18.2.0)
       '@douyinfe/semi-ui':
         specifier: ^2.53.3
         version: 2.53.3(react-dom@18.2.0)(react@18.2.0)
+      clsx:
+        specifier: ^2.1.0
+        version: 2.1.0
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -863,8 +872,27 @@ packages:
       scroll-into-view-if-needed: 2.2.31
     dev: false
 
+  /@douyinfe/semi-icons-lab@2.54.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-e0OwFZ4wU8Sy4dYT4wvKnb7p9RVu/+YUWQ//zZvbS/zmtrn8LNTvyo2B5s9Wnv4UAnpI7mTKgnJzRBnqfirKCw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /@douyinfe/semi-icons@2.53.3(react@18.2.0):
     resolution: {integrity: sha512-XiZYW8LWAkj00praEInUa67wEXI7o2UeJ6iBE/PRs2Nf6wrm2CFyK1CMWlszFmgE3BtUPcKrBadQABRlI2nlMA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      classnames: 2.5.1
+      react: 18.2.0
+    dev: false
+
+  /@douyinfe/semi-icons@2.54.0(react@18.2.0):
+    resolution: {integrity: sha512-uES6MgLXKIm2GamTu8weMJZCm7Fd2t5II1FfYCjXOFEmAPamxt5s640vTU3BSaYanJlu2zwjraijeWpix+WydQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
@@ -3054,6 +3082,11 @@ packages:
 
   /clsx@1.2.1:
     resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
+    engines: {node: '>=6'}
+    dev: false
+
+  /clsx@2.1.0:
+    resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
     engines: {node: '>=6'}
     dev: false
 

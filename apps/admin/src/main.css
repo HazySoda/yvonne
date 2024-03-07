@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .nav-bar-common {
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+  }
+
+  .nav-bar-logo {
+    height: 36px;
+    font-size: 36px;
+  }
+}
