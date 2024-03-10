@@ -9,10 +9,10 @@ importers:
   .:
     devDependencies:
       '@commitlint/cli':
-        specifier: ^19.0.3
+        specifier: ^19.1.0
         version: 19.1.0(@types/node@20.11.27)(typescript@5.4.2)
       '@commitlint/config-conventional':
-        specifier: ^19.0.3
+        specifier: ^19.1.0
         version: 19.1.0
       commitizen:
         specifier: ^4.3.0
@@ -33,7 +33,7 @@ importers:
         specifier: ^3.2.4
         version: 3.2.4(prettier@3.2.5)(typescript@5.4.2)
       turbo:
-        specifier: ^1.12.4
+        specifier: ^1.12.5
         version: 1.12.5
 
   apps/admin:
