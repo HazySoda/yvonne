@@ -2,10 +2,16 @@
   "name": "yvonne",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "dev:server": "bun --filter 'backend' dev"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.5.4"
   }
 }
