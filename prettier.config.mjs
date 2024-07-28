@@ -15,7 +15,7 @@ const config = {
   bracketSameLine: false,
   arrowParens: 'avoid',
   singleAttributePerLine: true,
-  plugins: ['prettier-plugin-organize-imports'],
+  plugins: ['prettier-plugin-organize-imports', 'prettier-plugin-packagejson'],
 }
 
 export default config
