@@ -11,7 +11,9 @@
     "apps/*"
   ],
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.5.4"
