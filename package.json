@@ -10,6 +10,7 @@
     "dev": "bun --filter '*' dev",
     "dev:admin": "bun --filter 'admin' dev",
     "dev:server": "bun --filter 'backend' dev",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,cjs,mjs,css,scss,json,md}\"",
     "prepare": "husky"
   },
   "config": {
