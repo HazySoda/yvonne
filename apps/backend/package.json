@@ -2,7 +2,9 @@
   "name": "backend",
   "scripts": {
     "dev": "bun run --hot src/index.ts",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "start": "bun run src/index.ts",
+    "studio": "bunx drizzle-kit studio"
   },
   "dependencies": {
     "drizzle-orm": "^0.32.1",
