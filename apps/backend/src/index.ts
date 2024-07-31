@@ -1,9 +1,12 @@
 import { Hono } from 'hono'
+import { db } from './db'
+import { users } from './db/schema/users'
 
 const app = new Hono()
 
-app.get('/', c => {
-  return c.text('Hello Hono!')
+app.get('/', async c => {
+  const userList = await db.select().from(users)
+  return c.json(userList)
 })
 
 export default {
