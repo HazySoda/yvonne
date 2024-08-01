@@ -1,6 +1,9 @@
+import dotenv from 'dotenv'
 import { Hono } from 'hono'
 import { db } from './db'
 import { users } from './db/schema/users'
+
+dotenv.config()
 
 const app = new Hono()
 
@@ -10,6 +13,6 @@ app.get('/', async c => {
 })
 
 export default {
-  port: 4001,
+  port: process.env.PORT || 4001,
   fetch: app.fetch,
 }

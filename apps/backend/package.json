@@ -7,6 +7,7 @@
     "studio": "bunx drizzle-kit studio --port 4002 --verbose"
   },
   "dependencies": {
+    "dotenv": "^16.4.5",
     "drizzle-orm": "^0.32.1",
     "hono": "^4.5.2",
     "postgres": "^3.4.4"
