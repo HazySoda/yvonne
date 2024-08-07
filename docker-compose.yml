@@ -13,9 +13,7 @@ services:
       context: .
       dockerfile: ./docker/Dockerfile.backend
     ports:
-      - '4001:4001'
-    environment:
-      - DATABASE_URL=postgres://yvon:123456@database:5432/yvonne
+      - '${PORT}:${PORT}'
     depends_on:
       - database
 
